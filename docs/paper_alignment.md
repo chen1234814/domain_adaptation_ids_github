@@ -29,12 +29,4 @@
 - Source sampler：使用 source label 的 class-balanced sampling。
 - Attack/anomaly class loss weight：`2.0`。
 
-## Notebook 合併內容
 
-原附件 notebook 已有 CORAL 實作，但原段落標題仍寫成 MMD。這裡已整理為：
-
-- 保留原 CORAL loss 與 `train_coral()`。
-- 新增 multi-kernel MMD loss 與 `train_mmd()`。
-- 新增 MMD 訓練/評估 cells。
-- 將原本誤標的 MMD cells 改為 CORAL cells。
-- 將 `config.methods` 改為 `('Source-only', 'DANN', 'MMD', 'CORAL')`。
